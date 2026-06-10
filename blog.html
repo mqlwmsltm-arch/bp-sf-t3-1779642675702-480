@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="강남 셔츠룸, 주식 투자자들이 찾는 마포 최고의 비즈니스 라운지. 원조 강남 스타일의 셔츠룸, 지금 바로 경험하세요. 24시 예약 가능.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 셔츠룸, 주식투자, 비즈니스룸, 강남 스타일, 셔츠룸 추천, 마포 유흥">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>강남 셔츠룸 블로그 | 주식투자 비즈니스 라운지 인사이트</title>
+    <link rel="canonical" href="https://sf-t3-1779642675702-480.vercel.app/blog">
+    <meta property="og:title" content="강남 셔츠룸 블로그 | 주식투자 비즈니스 라운지 인사이트">
+    <meta property="og:description" content="진짜 강남 스타일 셔츠룸, 마포에서 만난다. 주식투자자들의 전용 라운지. 24시 예약 010-6279-0862">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        h1, h2, h3 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ff0040;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 2rem 0;
+            text-shadow: 4px 4px 0 #00ffcc;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 1.5rem 0;
+            border-left: 8px solid #00ffcc;
+            padding-left: 1rem;
+        }
+        p, li, a {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: #ff0040;
+            border-bottom: 2px solid #ff0040;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #222;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .container { padding: 0 1rem; }
+            section { padding: 2rem 0; }
+        }
+        header {
+            background: #111;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #ff0040;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00ffcc;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        .logo:hover {
+            color: #ff0040;
+            border: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.5rem 0;
+        }
+        .hamburger {
+            display: none;
+            background: none;
+            border: 2px solid #00ffcc;
+            color: #00ffcc;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 1rem 0;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+        }
+        .tel-link {
+            color: #ff0040;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 2px solid #ff0040;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+        }
+        .tel-link:hover {
+            background: #ff0040;
+            color: #0a0a0a;
+            border-color: #ff0040;
+        }
+        .blog-card {
+            background: #111;
+            border: 1px solid #333;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 6px solid #00ffcc;
+        }
+        .blog-card .meta {
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        .blog-card h2 {
+            border-left: none;
+            padding-left: 0;
+            margin: 0 0 1rem 0;
+        }
+        .blog-card p {
+            margin-bottom: 1rem;
+        }
+        .blog-card .highlight {
+            color: #00ffcc;
+            font-weight: bold;
+        }
+        .cta-box {
+            background: #1a1a1a;
+            border: 2px solid #ff0040;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .cta-box .tel-link {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">강남 셔츠룸</a>
+                <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
+                <ul class="nav-links">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/about">소개</a></li>
+                    <li><a href="/services">서비스</a></li>
+                    <li><a href="/blog">블로그</a></li>
+                    <li><a href="/contact">문의</a></li>
+                </ul>
+                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1>BLOG</h1>
+            <p style="font-size: 1.2rem; color: #888; margin-bottom: 2rem;">주식투자자들의 비즈니스 라운지, 그 진실을 말한다.</p>
+
+            <div class="blog-card">
+                <div class="meta">2024.03.15 | 마포 | 비즈니스 인사이트</div>
+                <h2>주식투자자들이 강남 셔츠룸을 선택하는 진짜 이유</h2>
+                <p>형, 주식 시장에서 오늘도 피똥 싸고 왔어? 걱정 마. 마포에 진짜배기 강남 셔츠룸이 생겼어. 여긴 그냥 술 마시는 곳이 아니야. 비즈니스 라운지야.</p>
+                <p>내가 직접 경험해본 결과, 여기 <span class="highlight">강남 셔츠룸</span>은 주식투자자들의 전용 사무실이나 다름없어. 24시간 예약 가능하고, 프라이빗한 공간에서 차트 분석하고 딜 성사시키는 형들이 많아. 왜 그런지 알아? 분위기가 다르거든. 아무 노래방이나 주점이 아니야.</p>
+                <p>여기 오는 형들은 다 알아. <span class="highlight">주식투자</span>는 정보 싸움이라는 거. 강남 스타일의 셔츠룸에서 만나는 인맥, 그게 진짜 수익을 만든다고. 나도 처음엔 의심했어. "셔츠룸이 뭐 어쩌라고?" 했는데, 직접 와보니까 분위기가 장난 아냐.</p>
+                <p>마포에서 이런 곳은 여기밖에 없어. 다른 데 가면 시간 낭비야. 진짜 <span class="highlight">원조 강남 스타일</span>을 원한다면, 여기로 와. 24시 예약은 010-6279-0862로 해. 늦지 않게 와. 형, 이건 기회야.</p>
+            </div>
+
+            <div class="cta-box">
+                <h3>지금 당장 예약해</h3>
+                <p style="margin-bottom: 1rem;">주식투자자들의 비즈니스 라운지, 강남 셔츠룸. 24시 대기 중.</p>
+                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+            </div>
+
+            <p style="color: #666; font-size: 0.9rem; text-align: center; margin-top: 2rem;">*본 블로그는 실제 경험을 바탕으로 한 주관적인 리뷰입니다. 강남 셔츠룸은 마포에서 최고의 비즈니스 라운지를 지향합니다.</p>
+        </section>
+    </main>
+
+    <script>
+        // 햄버거 메뉴 토글 (모바일 대응)
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
